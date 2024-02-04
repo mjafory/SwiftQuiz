@@ -80,7 +80,7 @@ function submitQuiz() {
 	}
 
 	const percentage = (score / questions.length) * 100;
-	resultsContainer.innerHTML = `Score: ${score} / ${questions.length} (${percentage}%)`;
+	resultsContainer.innerHTML = `Score: ${score} / ${questions.length} (${percentage}%)` + "<br><a href='answer.html'>See Answer</a>";
 }
 
 document.addEventListener("DOMContentLoaded", buildQuiz);
